@@ -30,8 +30,9 @@ describe("Player", function() {
 
     it("should be possible to resume", function() {
       player.resume();
+      //expect(player).toBePlaying(song);
       expect(player.isPlaying).toBeTruthy();
-      expect(player.currentlyPlayingSong).toEqual(song);
+      //expect(player.currentlyPlayingSong).toEqual(song);
     });
   });
 

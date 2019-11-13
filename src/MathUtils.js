@@ -13,6 +13,9 @@ MathUtils.prototype.multiply = function(number1, number2) {
 }
  
 MathUtils.prototype.divide = function(number1, number2) {
+    if (number2 === 0){
+        throw new Error ('Division por cero no permitida');
+    }
     return number1 / number2;
 }
  

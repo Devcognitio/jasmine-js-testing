@@ -22,5 +22,11 @@ describe("MathUtils", function() {
             calc.factorial(-7)
         }).toThrowError(Error);
     });
+
+    it("deberia generar una exception al dividir por cero", function() {
+        expect(function() { 
+            calc.divide(1, 0)
+        }).toThrowError(Error);
+    });
          
 });
